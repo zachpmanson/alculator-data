@@ -18,7 +18,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Gets latest DM catalogue
-        run: cd science; node api.js
+        run: node api.js
       - name: 🚀 Commit and push if it changed
         run: |
           git config user.name "${GITHUB_ACTOR}"
