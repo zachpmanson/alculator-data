@@ -2,7 +2,7 @@ const https = require("https");
 const fs = require("fs");
 
 // Over 100 tends to fail because DM has an inefficient server
-const nresults = +process.argv[2] || 500;
+const nresults = +process.argv[2] || 50;
 
 function saveJSON(name, data) {
   console.log(`Saving ${data.length} items to ${name}.json`);
